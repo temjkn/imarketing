@@ -10,6 +10,23 @@ body{
     font-family: 'Montserrat', sans-serif;
     color: #FFFFFF;
 }
+body>header,#company,#trust,#pride{
+    margin-left: 100px;
+}
+.carousel-indicators {
+    margin-left:21%;
+    margin-bottom: 30px;
+    justify-content: left;
+    li{
+        width: 9px;
+        height: 9px;
+        border-radius: 9px;
+        background-clip: none;
+        border-top:none;
+        border-bottom: none;
+        margin-right:70px;
+    }
+}
 h1,h2,h3{
     text-transform: uppercase;
 }
@@ -22,9 +39,10 @@ span{
 header{
     min-height: 800px;
     background: #292929;
+    height: 100vh;
+    position: relative;
     .row{
         margin-right: 0;
-        position: relative;
     }
 }
 .btn{
@@ -36,6 +54,7 @@ header{
     line-height: 9px;
     text-transform: uppercase;
     padding: 13px 0;
+    cursor: pointer;
 }
 .carousel-item img{
     -webkit-filter: grayscale(100%);
@@ -46,11 +65,16 @@ header{
   filter: gray;
 }
 .contacts{
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
     background: #1E1E1E;
-    max-width: 120px;
+    max-width: 100px;
     ul{
-        margin-top:124px;
         padding-left: 51px;
     }
     li{
@@ -58,6 +82,9 @@ header{
         height:15px;
         list-style-type: none;
         margin-bottom: 32px;
+    }
+    .hidden_contact{
+        height: 40%;
     }
 }
 .contacts__tel{
@@ -67,7 +94,6 @@ header{
     transform: rotate(-90deg);
     display: block;
     width: 147px;
-    margin-top: 151px;
     margin-left: -7px;
     span{
         font-weight: 200;
@@ -75,7 +101,7 @@ header{
     }
 }
 .header__consultation{
-    padding-left: 283px;
+    padding-left: 300px;
     padding-top: 32px;
     h1{
         font-family: 'Caracoltv';
@@ -99,10 +125,10 @@ header{
     top: 34px;
     right: 15px;
     z-index: 5;
-    width: 1028px;
+    width: 55.48%;
     background: #1E1E1E;
     box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
-    padding-left: 85px;
+    padding-left: 65px;
     .nav-link{
         font-weight: bold;
         font-size: 11px;
@@ -113,6 +139,9 @@ header{
         
     }
 }
+.part_carousel{
+    position: relative;
+}
 .blog{
     background: #1E1E1E;
     box-shadow: 4px 5px 5px rgba(0, 0, 0, 0.25);
@@ -120,8 +149,8 @@ header{
     padding-bottom: 20px;
     width: 558px;
     position: absolute;
-    margin-left: 26.4%;
-    bottom: -100px;
+    margin-left: 22.4%;
+    bottom: -26px;
     .blog_articles{       
         position: absolute;
         bottom: 77px;
@@ -151,12 +180,169 @@ header{
         color: #E5E5E5;
         span{
             font-size: 8px;
-            margin-left: 10px;
+            margin-left: 25px;
         }
     }
 }
 .photo__report{
     position: absolute;
-    right: 0;
-    top: 0;
+    left: 64px;
+    bottom: 106px;
+    text-transform: uppercase;
+    display: inline-flex;
+    h3{
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: bold;
+        margin-bottom: 2px;
+    }
+    p{
+        font-size: 12px;   
+    }
+    .photo__report_play{
+        width: 41px;
+        height: 41px;
+        background: url(./img/play.png) no-repeat;
+        margin-left: 38px;
+        margin-top: 8px;
+        border: none;
+    }
+}
+#pride{
+    margin-bottom: 104px;
+    .pride_section{
+        position: relative;
+    }
+    h3{
+        color: #000000;
+        margin-top: 117px;
+        margin-bottom: 70px;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 22px;
+    }
+    .pride_wrapper{
+        height: 791px;
+        overflow-y: scroll;
+    }
+    .pride_wrapper_shadow{
+        position: absolute;
+        bottom: 0;
+        left:0;
+        width:100%;
+        box-shadow: 0px -25px 48px 61px #F0F0F0;
+    }
+    .pride_case{
+        margin-bottom: 14px;
+    }
+    .agency_tour{
+        background: url(./img/case1.png) no-repeat;
+        
+    }
+    .cash{
+        background: url(./img/case2.png) no-repeat;
+    }
+    .case{        
+        div{
+            height: 412px;
+        }
+        margin-bottom: 10px;
+        p{
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 18px;
+            color: #FFFFFF;
+            padding-left: 43px;
+            padding-top: 32px;
+            text-transform: uppercase;
+        }
+        h3{
+            font-family: Caracoltv;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 70px;
+            line-height: 62px;            
+            color: #FFFFFF;
+            padding-left: 100px;
+            margin-top: 103px;
+            text-transform: none;
+        }
+    }
+}
+#company{
+    padding-top: 58px;
+    padding-bottom: 135px;
+    background: #292929;
+    h3{
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 115px;
+    }
+    p{
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .btn__company{
+        margin-top: 31px;
+        background: #000000;
+        color: #FFFFFF;
+    }
+    .company_background{
+        min-width: 665px;
+        height: 473px;
+        background: url(./img/background_company.jpg) no-repeat;
+        position: relative;
+    }
+    .person_block{
+        position: absolute;
+        top: -47px;
+        left: -35px;
+        div{
+            display: inline-block;
+        }
+    }
+    .person_block>p{
+        margin-top: 15px;
+        font-weight: bold;
+        font-size: 9px;
+        line-height: 11px;
+        text-transform: uppercase;
+    }
+    .person{
+        display: flex;
+        align-items: stretch;
+        margin-right: 30px;
+        .person_info, .person_photo{
+            display: inline-block;
+        }
+    }
+    .person_photo{
+        width: 166px;
+        height: 349px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+    }
+    .person_info{
+        background: #1E1E1E;
+        margin-top: 5px;
+        margin-left: 5px;
+        h3{
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 15px;
+            margin-left: 20px;
+            margin-top: 16px;
+            margin-bottom: 25px;
+        }
+        p{
+            font-size: 9px;
+            line-height: 11px;
+            margin-left: 30px;
+            margin-right: 45px;
+        }
+    }
+    .person .alex{
+        display: none;
+    }
 }

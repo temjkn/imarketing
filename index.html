@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap&subset=cyrillic" rel="stylesheet"> 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet/less" type="text/css" href="styles.less">
-    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
     <title>Умный Маркетинг</title>
 </head>
 <body>
@@ -44,6 +44,7 @@
                     <li><a href="#" class="inst"></a></li>
                     <li><a href="#" class="be"></a></li>
                 </ul>
+                <div class="hidden_contact"></div>
                 <a href="tel:88005516110" class="contacts__tel">8 (800) 551 61 10
                         <span>Звонок бесплатный</span></a>
             </div>
@@ -56,7 +57,7 @@
                         <div class="btn">оставить заявку</div>
                     </div>
                     <div class="col-6">
-                        <div class="bd-example">
+                        <div class="part_carousel">
                             <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
                                 <ol class="carousel-indicators">
                                 <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -80,19 +81,19 @@
                                     </div>
                                 </div>
                                 </div>
+                            </div>                            
+                            <div class="photo__report">
+                                <div>
+                                    <h3>/посмотрите фотоотчет<br>с выступления</h3>
+                                    <p>Спикер: Илья Заварихин</p>
+                                </div>
+                                <div>
+                                    <button class="photo__report_play"></button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="photo__report">
-                <div>
-                    <h3>/посмотрите фотоотчет<hr>с выступления</h3>
-                    <p>Спикер: Илья Заварихин</p>
-                </div>
-                 <div>
-                     <button class="photo__report_play"></button>
-                 </div>
             </div>
             <div class="blog">
                 <h3>блог</h3>
@@ -105,39 +106,83 @@
             </div>
         </div>
     </header>
-    <div class="container" id="pride">
-        <div class="row">
+    <div id="pride">
+        <div class="container">            
             <h3>мы - гордимся</h3>
-            <a href="" class="case">
-                <div>
-                    <p>Кейс</p>
-                    <h3>Поднимаем продажи<br>тур-агенства в 4 раза</h3>
-                </div>
-            </a>
-            <a href="" class="case">
-                <div>
-                    <p>Кейс</p>
-                    <h3>Айдентика фирмы Cash</h3>
-                </div>
-            </a>
-        </div>
+            <div class="pride_section">
+                <div class="row pride_wrapper">
+                        <div class="col-12 pride_case">
+                            <a href="" class="case">
+                                <div class="agency_tour">
+                                    <p>Кейс</p>
+                                    <h3>Поднимаем продажи<br>тур-агенства в 4 раза</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 pride_case">
+                            <a href="" class="case">
+                                <div class="cash">
+                                    <p>Кейс</p>
+                                    <h3>Айдентика фирмы Cash</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 pride_case">
+                            <a href="" class="case">
+                                <div class="cash">
+                                    <p>Кейс</p>
+                                    <h3>Айдентика фирмы Cash</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 pride_case">
+                            <a href="" class="case">
+                                <div class="cash">
+                                    <p>Кейс</p>
+                                    <h3>Айдентика фирмы Cash</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                <div class="pride_wrapper_shadow"></div>
+            </div>
+            
+        </div>        
     </div>
     <div id="company">
         <div class="container">
             <h3>О компании</h3>
-            <div class="col-6">
-                <p>Digital-агентство S1 основано в 2008 году Александром Костиным. За 11 лет команда успела поработать с такими брендами как ИВ РОШЕ, ТАСС, Travelers, Балтика, Бизнес Молодость. Офисы компании работают в Москве, Санкт-Петербурге, Новосибирске, Самаре.<br><br>Мы новаторы и первопроходцы. Разрабатываем и внедряем практики, которые позволяют получить неоспоримое преимущество перед конкурентами.<br><br>Если для вас тоже важно быть первым в своей отрасли, свяжитесь с нами, и мы воплотим планы в реальность. </p>
-                <div class="btn btn__company">Связаться с нами</div>
-            </div>
-            <div class="col-6">
-                <div class="person">
-                    <img src="" alt="">
-                    <h3 class="image_name">Илья заварихин</h3>
-                    <h3>Илья заварихин</h3>
-                    <p>Арт-директор компании S1.<br>Заработал свой первый миллион<br>в 18 лет, на создании сайтов<br>и разработке айдентики фирм.<br>За 2019г. учавствовал спикером в 5<br>бизнес-форумах, в их числе<br>“Ты предприниматель”</p>
+            <div class="row">
+                <div class="col-5">
+                    <p>Digital-агентство S1 основано в 2008 году Александром Костиным. За 11 лет команда успела поработать с такими брендами как ИВ РОШЕ, ТАСС, Travelers, Балтика, Бизнес Молодость. Офисы компании работают в Москве, Санкт-Петербурге, Новосибирске, Самаре.<br><br>Мы новаторы и первопроходцы. Разрабатываем и внедряем практики, которые позволяют получить неоспоримое преимущество перед конкурентами.<br><br>Если для вас тоже важно быть первым в своей отрасли, свяжитесь с нами, и мы воплотим планы в реальность. </p>
+                    <div class="btn btn__company">Связаться с нами</div>
                 </div>
-                <p>/кликните на картинку, для полной информации</p>
-            </div>
+                <div class="col-6 company_background">
+                    <div class="person_block">
+                        <div class="person">
+                            <div class="person_photo">
+                                <img src="./img/alex.png" alt="">
+                            </div>
+                            <div class="person_info alex">
+                                <h3 class="image_name">Илья заварихин</h3>
+                                <h3>Илья заварихин</h3>
+                                <p>Арт-директор компании S1.<br>Заработал свой первый миллион<br>в 18 лет, на создании сайтов<br>и разработке айдентики фирм.<br>За 2019г. учавствовал спикером в 5<br>бизнес-форумах, в их числе<br>“Ты предприниматель”</p>
+                            </div>                        
+                        </div>
+                        <div class="person">
+                            <div class="person_photo">
+                                <img src="./img/ilia.png" alt="">
+                            </div>
+                            <div class="person_info ilia">
+                                <h3 class="image_name">Илья заварихин</h3>
+                                <h3>Илья заварихин</h3>
+                                <p>Арт-директор компании S1.<br>Заработал свой первый миллион<br>в 18 лет, на создании сайтов<br>и разработке айдентики фирм.<br>За 2019г. учавствовал спикером в 5<br>бизнес-форумах, в их числе<br>“Ты предприниматель”</p>
+                            </div>                        
+                        </div>
+                        <p>/кликните на картинку, для полной информации</p>
+                    </div>                    
+                </div>
+            </div>            
         </div>
     </div>
     <div id="trust">
